@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="images">
+        <img id ="bg" src="assets/bg.jpg">
+        <img id ="montain" src="assets/mountain.png">
+        <img id ="road" src="assets/road.png">
+        <img id ="moon" src="assets/moon.png">
+        <h1 id="text">Moon Light</h1>
+    </section>
+
+
+    <script>
+        var background = document.querySelector('#bg');
+        var montain = document.querySelector('#montain');
+        var road = document.querySelector('#road');
+        var moon = document.querySelector('#moon');
+        var text = document.querySelector('#text');
+
+        window.addEventListener('scroll', function() {
+            var scrollValue = window.scrollY;
+
+            background.style.top = scrollValue * 0.5 + 'px';
+
+            montain.style.top = -scrollValue * 0.15 + 'px';
+
+            moon.style.left = -scrollValue * 0.5 + 'px';
+            moon.style.top = -scrollValue * 0.5 + 'px';
+
+            road.style.top = scrollValue * 0.15 + 'px';
+
+            text.style.top = scrollValue * 1 + 'px';
+        });
+    </script>
+</body>
+</html>
