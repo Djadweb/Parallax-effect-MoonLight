@@ -63,3 +63,11 @@ section #text {
     z-index: 2;
 }
 
+.content {
+    color: #FFF;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
