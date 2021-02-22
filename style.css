@@ -49,10 +49,10 @@ section img{
     object-fit: cover;        
 }
 
-section #text {
-    z-index: 1;
+section #text {    
     font-size: 8rem;
     color: #FFF;
+    position: relative;
 }
 
 #text {
