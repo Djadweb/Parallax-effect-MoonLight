@@ -66,8 +66,18 @@ section #text {
 .content {
     color: #FFF;
     font-size: 1.4rem;
-    text-align: center;
+    text-align: justify;
     width: 50%;
     margin: 0 auto;
     margin-top: 10rem;
+}
+
+@media (max-width: 800px) {
+    #text {
+        font-size: 5rem!important;        
+    }
+
+    .content {
+        width: 90%;
+    }
 }
